@@ -40,8 +40,8 @@ namespace GME1003GoblinDanceParty
 
         protected override void Initialize()
         {
-            _rng = new Random();        //finish setting up our Randon 
-            _numStars = 100;              //this would be better as a random number between 100 and 300
+            _rng = new Random();        //finish setting up our Random
+            _numStars = _rng.Next(50, 301); //random number of stars between 50-300
             _starsX = new List<int>();  //stars X coordinate
             _starsY = new List<int>();  //stars Y coordinate
 
